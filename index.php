@@ -1,6 +1,6 @@
 <html>
  <head>
- <Title>Registration Form</Title>
+ <Title>Registration From</Title>
  <style type="text/css">
  	body { background-color: #fff; border-top: solid 10px #000;
  	    color: #333; font-size: .85em; margin: 20; padding: 20;
@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "<Nama server database Anda>";
-    $user = "<Nama admin database Anda>";
-    $pass = "<Password admin database Anda>";
-    $db = "<Nama database Anda>";
+    $host = "tcp:biodatawebappserver.database.windows.net,1433";
+    $user = "rezadwikurniawan";
+    $pass = 'p4$p4$4n';
+    $db = "biodata";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
